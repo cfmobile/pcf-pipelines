@@ -8,7 +8,7 @@ image_resource:
     repository: virtmerlin/c0-worker
 
 inputs:
-  - name: pcf-pipelines 
+  - name: pcf-pipelines
   - name: tool-om
 
 outputs:
@@ -39,19 +39,21 @@ params:
   TF_VAR_aws_region:
   S3_ENDPOINT:
   # db credentials
-  db_app_usage_service_username:
-  db_app_usage_service_password:
-  db_autoscale_username:
-  db_autoscale_password:
-  db_diego_username:
-  db_diego_password:
-  db_notifications_username:
-  db_notifications_password:
-  db_routing_username:
-  db_routing_password:
-  db_uaa_username:
-  db_uaa_password:
-  db_ccdb_username:
-  db_ccdb_password:
-  ert_sql_db_username:
+  gcloud_sql_instance_username:
+  gcloud_sql_instance_password:
+  # db_app_usage_service_username:
+  # db_app_usage_service_password:
+  # db_autoscale_username:
+  # db_autoscale_password:
+  # db_diego_username:
+  # db_diego_password:
+  # db_notifications_username:
+  # db_notifications_password:
+  # db_routing_username:
+  # db_routing_password:
+  # db_uaa_username:
+  # db_uaa_password:
+  # db_ccdb_username:
+  # db_ccdb_password:
+  # ert_sql_db_username:
   ert_sql_db_password:

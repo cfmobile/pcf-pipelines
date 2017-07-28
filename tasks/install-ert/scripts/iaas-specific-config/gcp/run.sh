@@ -22,20 +22,8 @@ gcloud_sql_instance=$(eval ${gcloud_sql_instance_cmd})
 gcloud_sql_instance_ip=$(gcloud sql instances list | grep ${gcloud_sql_instance} | awk '{print$4}')
 
 declare -a arr=(
-"db_app_usage_service_username"
-"db_app_usage_service_password"
-"db_autoscale_username"
-"db_autoscale_password"
-"db_diego_username"
-"db_diego_password"
-"db_notifications_username"
-"db_notifications_password"
-"db_routing_username"
-"db_routing_password"
-"db_uaa_username"
-"db_uaa_password"
-"db_ccdb_username"
-"db_ccdb_password"
+"gcloud_sql_instance_username"
+"gcloud_sql_instance_password"
 "gcloud_sql_instance_ip"
 )
 
