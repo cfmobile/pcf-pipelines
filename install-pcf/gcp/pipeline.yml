@@ -11,8 +11,8 @@ resources:
 - name: pcf-pipelines
   type: git
   source:
-    uri: https://github.com/pivotal-cf/pcf-pipelines.git
-    branch: master
+    uri: https://github.com/cfmobile/pcf-pipelines.git
+    branch: fix_1.9
     username: {{github_token}}
 
 - name: tfstate
@@ -232,7 +232,7 @@ jobs:
       pcf_iaas: gcp
       terraform_template: c0-gcp-poc
       pcf_ert_ssl_cert: "generate"
-      pcf_ert_ssl_key: {{pcf_ert_ssl_key}} 
+      pcf_ert_ssl_key: {{pcf_ert_ssl_key}}
       gcp_proj_id: {{gcp_project_id}}
       gcp_region: {{gcp_region}}
       gcp_storage_access_key: {{gcp_storage_access_key}}
@@ -248,7 +248,7 @@ jobs:
       db_diego_password: {{db_diego_password}}
       db_notifications_username: {{db_notifications_username}}
       db_notifications_password: {{db_notifications_password}}
-      db_autoscale_username: {{db_autoscale_username}} 
+      db_autoscale_username: {{db_autoscale_username}}
       db_autoscale_password: {{db_autoscale_password}}
       db_uaa_username: {{db_uaa_username}}
       db_uaa_password: {{db_uaa_password}}
@@ -256,8 +256,8 @@ jobs:
       db_app_usage_service_password: {{db_app_usage_service_password}}
       db_ccdb_username: {{db_ccdb_username}}
       db_ccdb_password: {{db_ccdb_password}}
-      db_routing_username: {{db_routing_username}} 
-      db_routing_password: {{db_routing_password}} 
+      db_routing_username: {{db_routing_username}}
+      db_routing_password: {{db_routing_password}}
       # aws specific
       bucket:
       TF_VAR_aws_access_key:
@@ -271,7 +271,7 @@ jobs:
       pcf_iaas: gcp
       terraform_template: c0-gcp-poc
       pcf_ert_ssl_cert: "generate"
-      pcf_ert_ssl_key: {{pcf_ert_ssl_key}} 
+      pcf_ert_ssl_key: {{pcf_ert_ssl_key}}
       pcf_az_1: {{gcp_zone_1}}
       pcf_az_2: {{gcp_zone_2}}
       pcf_az_3: {{gcp_zone_3}}
