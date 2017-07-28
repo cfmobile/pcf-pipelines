@@ -36,6 +36,7 @@ declare -a arr=(
 "db_uaa_password"
 "db_ccdb_username"
 "db_ccdb_password"
+"gcloud_sql_instance_ip"
 )
 
 echo "finding variables to replace in your json config file using the value from the env variable of the same name"
