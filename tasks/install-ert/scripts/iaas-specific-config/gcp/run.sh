@@ -1,5 +1,5 @@
 #!/bin/bash
-set -e
+set -ex
 
 json_file="json_file/ert.json"
 
